@@ -172,7 +172,7 @@ st.dataframe(filtered_df[["categorySlug", "subcatSlug", "name", "brand", "price"
 st.markdown("### Clickable Product Links")
 for _, row in filtered_df.iterrows():
     st.markdown(
-        f"- [{row['name']}]({row['new_url']}) - **Points: {row['product_point']}**, Rating: {row['average_rating']}, Brand: {row['brand']} Size: {row['size']} Selling price: {row['selling_price']}"
+        f"- **{row['brand']}** | [{row['name']}]({row['new_url']}) - **Points: {row['product_point']}**, Rating: {row['average_rating']}, Size: {row['size']} Selling price: {row['selling_price']}"
     )
 
 
